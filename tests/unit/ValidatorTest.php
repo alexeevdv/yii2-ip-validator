@@ -44,6 +44,11 @@ class ValidatorTest extends \yii\codeception\TestCase {
             $validator = new \alexeevdv\ip\Validator([
                 "range" => [
                     "345.12.43.56",
+                    "asdf/13",
+                    "192.168.0.1/az",
+                    "192.168.0.1 /22",
+                    "192.168.0.1/ 22",
+                    "192.168.0.1/0",
                     "123123",
                     "....",
                     "adsf df ",
@@ -64,7 +69,7 @@ class ValidatorTest extends \yii\codeception\TestCase {
 
         $good = [
             "192.168.0.1",
-            "10.61.1.3",
+            "10.60.1.3",
         ];
 
         foreach($good as $ip) {
