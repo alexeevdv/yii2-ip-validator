@@ -1,0 +1,30 @@
+{
+    "name": "alexeevdv/yii2-ip-validator",
+    "description": "Yii2 IP address validator",
+    "keywords": ["yii2", "ip", "address", "validator", "ipv4", "ipv6"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/alexeevdv/yii2-ip-validator",
+        "issues": "https://github.com/alexeevdv/yii2-ip-validator/issues"
+    },
+    "authors": [
+        {
+            "name": "alexeevdv",
+            "homepage": "https://alexeevdv.ru/",
+            "email": "mail@alexeevdv.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "alexeevdv\\ip\\": ""
+        }
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "^2.0@dev"
+    }
+}
